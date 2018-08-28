@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    -var services = servicesData
+    -var features = featuresData
+    -var works = worksData
+    -var pricing = pricingData
+    -var allTeams = teamData
+    -var blog = blogData
+    -var contact = contactData
+    include partials/services
+    include partials/features
+    include partials/works
+    include partials/pricing
+    include partials/team
+    include partials/blog
+    include partials/contact

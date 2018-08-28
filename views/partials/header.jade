@@ -1,0 +1,38 @@
+header#hero-area(data-stellar-background-ratio="0.5")    
+    //Navbar Start
+    nav.navbar.navbar-expand-lg.fixed-top.scrolling-navbar.indigo
+        .container
+            //Brand and toggle get grouped for better mobile display
+            .navbar-header
+                a.navbar-brand(href="index.html")
+                    img.img-fulid(src="img/logo.png", alt="")
+                button.navbar-toggler(type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation")
+                    i.lnr.lnr-menu
+
+            .collapse.navbar-collapse#main-navbar
+                ul.navbar-nav.mr-auto.w-100.justify-content-end
+                    li.nav-item
+                        a.nav-link.page-scroll(href="#hero-area") Home  
+                    li.nav-item
+                        a.nav-link.page-scroll(href="#services") Services
+                    li.nav-item
+                        a.nav-link.page-scroll(href="#features") Features
+                    li.nav-item
+                        a.nav-link.page-scroll(href="#portfolios") Works
+                    li.nav-item
+                        a.nav-link.page-scroll(href="#pricing") Pricing
+                    li.nav-item
+                        a.nav-link.page-scroll(href="#team") Team
+                    li.nav-item
+                        a.nav-link.page-scroll(href="#blog") Blog
+                    li.nav-item
+                        a.nav-link.page-scroll(href="#contact") Contact
+
+    // Navbar End   
+    .container      
+        .row.justify-content-md-center
+            .col-md-10
+                .contents.text-center
+                    h1.wow.fadeInDown(data-wow-duration="1000ms" data-wow-delay="0.3s") Mate - Free Parallax Website Template
+                    p.lead.wow.fadeIn(data-wow-duration="1000ms" data-wow-delay="400ms") Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    a.btn.btn-common.wow.fadeInUp(href="#" data-wow-duration="1000ms" data-wow-delay="400ms") Download

@@ -1,0 +1,22 @@
+section#features.section(data-stellar-background-ratio="0.2")
+    .container
+        .section-header          
+            h2.section-title #{features.title}
+            hr.lines
+            p.section-subtitle !{features.description}
+        
+        .row
+            .col-lg-8.col-md-12.col-xs-12
+                .container
+                    .row
+                        each feature in features.features
+                            .col-lg-6.col-sm-6.col-xs-12.box-item
+                                span.icon
+                                    i(class="lnr lnr-" + feature.icon)
+                                .text
+                                    h4 #{feature.title}
+                                    p #{feature.description}
+
+            .col-lg-4.col-xs-12
+                .show-box
+                    img.img-fulid(src="img/features/feature.png" alt="")

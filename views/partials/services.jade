@@ -1,0 +1,14 @@
+section#services.section
+    .container
+        .section-header          
+            h2.section-title.wow.fadeIn(data-wow-duration="1000ms" data-wow-delay="0.3s") #{services.title}
+            hr.lines.wow.zoomIn(data-wow-delay="0.3s")
+            p.section-subtitle.wow.fadeIn(data-wow-duration="1000ms" data-wow-delay="0.3s") #{services.description} 
+    .row
+        each  service in services.services
+            .col-md-4.col-sm-6
+                .item-boxes.wow.fadeInDown(data-wow-delay="0.2s")
+                    .icon
+                        i(class="lnr lnr-" + service.icon)
+                    h4 #{service.title}
+                    p #{service.description}

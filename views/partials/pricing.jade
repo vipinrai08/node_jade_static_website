@@ -1,0 +1,58 @@
+// Start Pricing Table Section
+#pricing.section.pricing-section
+  .container
+    .section-header
+      h2.section-title #{pricing.title}
+      hr.lines
+      p.section-subtitle #{pricing.description}
+    .row.pricing-tables
+        each demo in pricing.demo 
+             .col-md-4.col-sm-6.col-xs-12
+               .pricing-table
+                  .pricing-details
+                    h2 #{demo.title}
+                    span #{demo.price}
+                    ul
+                      li #{demo.features[0]}
+                        li #{demo.features[1]}
+                        li #{demo.features[2]}
+                        li #{demo.features[3]}
+                    .plan-button
+                      a.btn.btn-common(href='#') Get Plan
+// End Pricing Table Section
+// Counter Section Start
+.counters.section(data-stellar-background-ratio='0.5')
+  .container
+    .row
+      .col-sm-6.col-md-3.col-lg-3
+        .facts-item
+          .icon
+            i.lnr.lnr-clock
+          .fact-count
+            h3
+              span.counter 1589
+            h4 Working Hours
+      .col-sm-6.col-md-3.col-lg-3
+        .facts-item
+          .icon
+            i.lnr.lnr-briefcase
+          .fact-count
+            h3
+              span.counter 699
+            h4 Completed Projects
+      .col-sm-6.col-md-3.col-lg-3
+        .facts-item
+          .icon
+            i.lnr.lnr-user
+          .fact-count
+            h3
+              span.counter 203
+            h4 No. of Clients
+      .col-sm-6.col-md-3.col-lg-3
+        .facts-item
+          .icon
+            i.lnr.lnr-heart
+          .fact-count
+            h3
+              span.counter 1689
+            h4 Peoples Love

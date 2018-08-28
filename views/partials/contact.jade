@@ -1,0 +1,53 @@
+// Contact Section Start
+section#contact.section(data-stellar-background-ratio='-0.2')
+  .contact-form
+    .container
+      .row
+        .col-lg-6.col-sm-6.col-xs-12
+          .contact-us
+            h3 #{contact.title}
+            .contact-address
+              p #{contact.address} 
+              p.phone
+                | Phone: 
+                span (#{contact.phone})
+              p.email
+                | E-mail: 
+                span (#{contact.Email})
+            .social-icons
+              ul
+                li.facebook
+                  a(href='#')
+                    i.fa.fa-facebook
+                li.twitter
+                  a(href='#')
+                    i.fa.fa-twitter
+                li.google-plus
+                  a(href='#')
+                    i.fa.fa-google-plus
+                li.linkedin
+                  a(href='#')
+                    i.fa.fa-linkedin
+                li.dribbble
+                  a(href='#')
+                    i.fa.fa-dribbble
+        .col-lg-6.col-sm-6.col-xs-12
+          .contact-block
+            form#contactForm
+              .row
+                .col-md-12
+                  .form-group
+                    input#name.form-control(type='text', name='name', placeholder='Your Name', required='', data-error='Please enter your name')
+                    .help-block.with-errors
+                .col-md-12
+                  .form-group
+                    input#email.form-control(type='text', placeholder='Your Email', name='name', required='', data-error='Please enter your email')
+                    .help-block.with-errors
+                .col-md-12
+                  .form-group
+                    textarea#message.form-control(placeholder='Your Message', rows='8', data-error='Write your message', required='')
+                    .help-block.with-errors
+                  .submit-button.text-center
+                    button#submit.btn.btn-common(type='submit') Send Message
+                    #msgSubmit.h3.text-center.hidden
+                    .clearfix

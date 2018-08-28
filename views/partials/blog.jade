@@ -1,0 +1,32 @@
+// Blog Section
+section#blog.section
+  // Container Starts
+  .container
+    .section-header
+      h2.section-title #{blog.title}
+      hr.lines
+      p.section-subtitle #{blog.description}
+    .row
+        each blogs in blog.blogs
+           .col-lg-4.col-md-4.col-sm-6.col-xs-12.blog-item
+            .blog-item-wrapper
+              .blog-item-img
+                a(href='single-post.html')
+                  img(src='img/blog/'+blogs.image, alt='')
+              .blog-item-text
+                .meta-tags
+                  span.date
+                    i.lnr.lnr-clock
+                    | 2 Days Ago
+                  span.comments
+                    a(href='#')
+                      i.lnr.lnr-bubble
+                      |  24 Comments
+                h3
+                  a(href='single-post.html') #{blogs.title}
+                p
+                  | #{blogs.description}
+                a.btn-rm(href='single-post.html')
+                  | Read More 
+                  i.lnr.lnr-arrow-right
+

@@ -1,0 +1,33 @@
+section#portfolios.section
+  // Container Starts
+  .container
+    .section-header
+      h2.section-title #{works.title}
+      hr.lines
+      p.section-subtitle !{works.description}
+
+    .row
+      .col-md-12
+        .controls.text-center
+          a.filter.active.btn.btn-common(data-filter='all') All
+          a.filter.btn.btn-common(data-filter='.design') Design
+          a.filter.btn.btn-common(data-filter='.development') Development
+          a.filter.btn.btn-common(data-filter='.print') Print
+      .row#portfolio
+        each work in works.portfolios
+          .col-sm-6.col-md-4.col-lg-4.col-xl-4.mix-item.mix(class=work.categories.join(' '))
+            .portfolio-item
+              .shot-item
+                img(src='img/portfolio/'+work.image, alt='')
+                a.overlay.lightbox(href='img/portfolio/'+work.image)
+                  i.lnr.lnr-eye.item-icon
+section.video-promo.section
+  .container
+    .row.justify-content-center
+      .col-lg-8
+        .video-promo-content.text-center
+          h2.wow.zoomIn(data-wow-duration='1000ms', data-wow-delay='100ms') Watch Our Intro video
+          p.wow.zoomIn(data-wow-duration='1000ms', data-wow-delay='100ms')
+            | Aliquam vestibulum cursus felis. In iaculis iaculis sapien ac condimentum. Vestibulum congue posuere lacus, id tincidunt nisi porta sit amet. Suspendisse et sapien varius, pellentesque dui non, semper orci.
+          a.video-popup.wow.fadeInUp(href='https://www.youtube.com/watch?v=IXoMDwh4Cq8', data-wow-duration='1000ms', data-wow-delay='0.3s')
+            i.lnr.lnr-film-play
